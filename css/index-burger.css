@@ -1,0 +1,25 @@
+#burger-checkbox {
+    display: none;
+}
+
+.burger-icon {
+    font-size: 3.5rem;
+}
+.burger-icon:hover {
+    cursor: pointer;
+}
+
+header nav .menu {
+    display: none;
+}
+header nav input:checked ~ .menu {
+    display: flex;
+}
+
+@media (min-width: 600px) {
+    .burger-icon {
+        display: none;
+    }
+
+}
+

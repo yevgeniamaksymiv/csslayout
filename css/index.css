@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+:root {
+    font-family: "DotGothic16", sans-serif;
+    --main-color: black;
+    --accent-color: rgb(50, 206, 211);
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 980px;
+    margin: auto;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav {
+    background-color: var(--accent-color);
+    padding: 5px;
+}
+
+header nav.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+header nav .menu a {
+    color: var(--main-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+
+header nav .menu a:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+
+  header nav div.container {
+      display: flex;
+
+  } 
+
+}
+
+header .banner {
+    background-image: url(../img/baby-yoda.svg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .banner h1 {
+    color: var(--accent-color);
+}
+
+
+
+
+header .logo {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    max-width: 250px;
+}
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: #000000;
+    color: #000000;
+}
+
+.card-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+main .products > article {
+    border: 1px solidvar(--main-color);
+    padding: 5px;
+}
+
+main .products > article img {
+    display: block;
+    width: 100%;
+}
+
+main .products > article > .button {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+@media (min-width: 801px) {
+    main .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+}
+
+@media (min-width: 980px) {
+    main .products {
+        grid-template-columns: repeat(4 1fr);
+        }
+}
+
